@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\DropdownController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::post('/subscribe', [SubscriberController::class, 'subscribe']);
+
+Route::get('/hf', [SubscriberController::class, 'hf']);
+
+// Route::post('api/fetch-cities', [DropdownController::class, 'fetchCity']);
+

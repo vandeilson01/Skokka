@@ -10,7 +10,7 @@ class PostClassfieldController extends Controller
 {
     public function viewForm(): View
     {
-        return view('post.insert',['states' => ['name' => 'aaa' ,'id' =>1],'categories' => ['name' => 'aaa' ,'id' =>1]]);
+        return view('post.insert',['states' => ['name' => 'aaa' ,'id' =>1], 'citys' => ['name' => 'aaa' ,'id' =>1],'categories' => ['name' => 'aaa' ,'id' =>1]]);
     }
     public function postInitialForm(Request $request)
     {
@@ -25,7 +25,7 @@ class PostClassfieldController extends Controller
         'age' => 'string|required',
         'city' => 'string|required'
     ]);
-        return view('post.insert',['states' => ['name' => 'aaa' ,'id' =>1],'categories' => ['name' => 'aaa' ,'id' =>1]]);
+        return view('post.insert',['states' => ['name' => 'aaa' ,'id' =>1], 'citys' => ['name' => 'aaa' ,'id' =>1],'categories' => ['name' => 'aaa' ,'id' =>1]]);
     }
     public function viewFormPhotos(): View
     {

@@ -16,30 +16,35 @@ class CategorySeeder extends Seeder
     {
         DB::table("categories")->insert([
             [
+                "name" => "1",
                 "name" => "Acompanhantes",
                 "description" => "Encontre as melhores acompanhantes do Brasil, que te oferecem grande variedade de serviços eróticos. Não espere mais!",
                 "slug" => $this->createSlug('Acompanhantes'),
                 "image_url_dir" => "categories/womenseekmen_repr.jpg"
             ],
             [
+                "name" => "2",
                 "name" => "Transex E Travestis",
                 "description" => "Se atreva a provar todas as artistas do prazer com as mais sexys transex e travestis de sua cidade. Não perca a oportunidade de conhecê-las",
                 "slug" => $this->createSlug('Transex E Travestis'),
                 "image_url_dir" => "categories/trans_repr.jpg"
             ],
             [
+                "name" => "3",
                 "name" => "Massagens",
                 "description" => "Encontre as melhores massagistas eróticas do Brasil. Serviços de massagens e acompanhantes na sua cidade!",
                 "slug" => $this->createSlug('Massagens'),
                 "image_url_dir" => "categories/massages_repr.jpg"
             ],
             [
+                "name" => "4",
                 "name" => "Acompanhantes Masculinos",
                 "description" => "Encontra escorts e acompanhantes masculinos em Brasil. Curta encontros com homens. Anime-se, faça contato ou publique seu anúncio de forma gratuita",
                 "slug" => $this->createSlug('Acompanhantes Masculinos'),
                 "image_url_dir" => "categories/menseekwomen_repr.jpg"
             ],
             [
+                "name" => "5",
                 "name" => "Encontros Casuais",
                 "description" => "Se o que você deseja é encontrar pessoas interessantes, homens e mulheres para um encontro casual sem compromisso, aqui é o melhor lugar",
                 "slug" => $this->createSlug('Encontros Casuais'),

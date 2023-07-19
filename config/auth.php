@@ -18,6 +18,8 @@ return [
         'passwords' => 'users',
     ],
 
+   
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -39,6 +41,16 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
+        'acom' => [
+            'driver' => 'session',
+            'provider' => 'acompanhantes',
         ],
     ],
 
@@ -62,7 +74,16 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\AcompanhantesModel::class,
+        ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admins::class,
+        ],
+
+        'acompanhantes' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\AcompanhantesModel::class,
         ],
 
         // 'users' => [
@@ -93,6 +114,18 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_reset_tokens',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'acompanhantes' => [
+            'provider' => 'acompanhantes',
             'table' => 'password_reset_tokens',
             'expire' => 60,
             'throttle' => 60,

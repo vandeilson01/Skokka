@@ -1,0 +1,42 @@
+
+ <!DOCTYPE html>
+ <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title></title>
+   </head>
+   <body>
+
+     <form  action="process.php" method="post">
+
+       <label for="">Nome</label>
+       <input type="text" placeholder="Nome completo" name="nome" value="" required>
+       <br/>
+
+       <label for="">Email</label>
+       <input type="email" placeholder="Email" name="email" value="" required>
+       <br/>
+
+       <label for="">Telefone</label>
+       <input type="number" placeholder="Telefone" name="phone" value="" required>
+       <br/>
+
+       <label for="">Tipo de documento</label>
+       <select name="documento">
+         <option value="CPF">CPF</option>
+         <option value="CNPJ">CNPJ</option>
+       </select>
+        <br/>
+
+        <label for="">Numero do documento</label>
+        <input type="number" placeholder="CPF ou CNPJ" name="documento_number" value="" required>
+        <br/>
+
+
+        <input type="submit" name="" value="Cadastrar">
+
+
+     </form>
+
+   </body>
+ </html>
